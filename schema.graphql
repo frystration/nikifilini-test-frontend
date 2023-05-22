@@ -62,7 +62,7 @@ type ProductStatus {
 type Query {
     deliveryTypes: [DeliveryType]!
     getOrders(page: Int): OrdersResponse!
-    order(number: String!): Order
+    getOneOrder(number: String!): Order
     orderStatuses: [OrderStatus]!
     productStatuses: [ProductStatus]!
 }

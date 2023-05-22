@@ -2,7 +2,7 @@ import { gql } from "@apollo/client";
 
 export const ORDER_QUERY = gql`
   query Order($number: String!) {
-    order(number: $number) {
+    getOneOrder(number: $number) {
       number
       status
       id
